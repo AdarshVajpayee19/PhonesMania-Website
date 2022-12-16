@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d94c02f20f.js" crossorigin="anonymous"></script>
+    <title>First Landing page using tailwind css</title>
+</head>
+<body>
+    <nav class="bg-slate-800 text-white flex justify-between">
+        <!-- <img src="https://randomuser.me/api/portraits/men/75.jpg" class="h-12 px-3 py-3 rounded-3xl border-r-white"alt=""> -->
+        <span class="text-xl flex items-center mx-3 font-extrabold"><a href="landing.html">Phones Mania</a></span>
+        <ul class="px-28 py-2 flex space-x-11 justify-end">
+            <li class="cursor-pointer hover:text-slate-400"><a href="landing.html">Home</a></li>
+            <li class="cursor-pointer hover:text-decoration hover:underline hover:text-slate-400"><a href="about.html">About</a></li>
+            <li class="cursor-pointer hover:text-slate-400"><a href="brands.html">Brands</a></li>
+            <li class="cursor-pointer hover:text-slate-400"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    </main>
+    <hr>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-slate-200">
+  <label id="listbox-label" class="block text-sm font-medium text-gray-700 text-center py-6"> Workers in our company</label>
+  <div class="mt-1 bg-slate-200 relative">
+    <button type="button" class="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+      <span class="flex items-center">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+        <span class="ml-3 block truncate"> Adarsh vajpayee </span>
+      </span>
+      <span class="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <!-- Heroicon name: solid/selector -->
+        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </span>
+    </button>
+
+    <!--
+      Select popover, show/hide based on select state.
+
+      Entering: ""
+        From: ""
+        To: ""
+      Leaving: "transition ease-in duration-100"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+    <ul class="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
+      <!--
+        Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+
+        Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
+      -->
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Gopal Krishna </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Gnanesh Auti </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Shabarish Patil </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Manoj Gouda </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Bhupal Ram </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Rajath yadav </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Hruthik </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Siddanth (Billa) </span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <hr>
+      <li class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+        <div class="flex items-center">
+          <img src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+          <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+          <span class="font-normal ml-3 block truncate"> Bharat(malgi)</span>
+        </div>
+
+        <!--
+          Checkmark, only display for selected option.
+
+          Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+        -->
+        <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+          <!-- Heroicon name: solid/check -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </span>
+      </li>
+      <!-- More items... -->
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="mx-8 pt-72 flex text-gray-500">
+  <footer class="pb-2">
+    <hr>
+  Copyright <i class="fa fa-copyright text-gray-500" aria-hidden="true"> </i>  phonesmania 2015 Inc. 
+  <ul class="space-y-3">
+    <li> </li>
+    <li><i class="fa fa-envelope" aria-hidden="true"></i>Phonesmania2015@gmail.com</li> 
+    <li><i class="fa fa-phone" aria-hidden="true"></i>Phone Number : 7676780636</li>
+    <li><i class="fa fa-address-card-o" aria-hidden="true"></i>Address : Manik nagar , ITI college road raichur</li>
+    <li><i class="fa fa-map-pin" aria-hidden="true"></i>Pin-Code : 584-103</li>
+  </ul>
+  <ul class="pb-2 flex mx-96 space-x-8 space-y-3 cursor-pointer ">
+      <li></li>
+      <li class="hover:text-decoration hover:underline hover:text-slate-800"><i class="fa fa-github " aria-hidden="true"></i><a href="https://github.com/AdarshVajpayee">Github</a></li>
+      <li class="hover:text-decoration hover:underline hover:text-slate-800"><i class="fa fa-instagram " aria-hidden="true"></i><a href="https://www.instagram.com/adarsh_vajpayee_/">Instagram</a></li> 
+      <li class="hover:text-decoration hover:underline hover:text-slate-800"><i class="fa fa-linkedin-square " aria-hidden="true"></i><a href="https://www.linkedin.com/in/adarsh-vajpayee-27b900229/">Linked In</a></li>
+      <li class="hover:text-decoration hover:underline hover:text-slate-800"><i class="fa fa-facebook-square " aria-hidden="true"></i><a href="https://www.facebook.com/adarsh.vajpayee.58/">Facebook</a></li>
+  </ul>
+</footer>
+</div>
+</body>
+</html>
